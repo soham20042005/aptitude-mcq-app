@@ -1,0 +1,117 @@
+.tab-warning-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.2s ease;
+  backdrop-filter: blur(5px);
+}
+
+.tab-warning-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  animation: shakeIn 0.5s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-top: 5px solid #ff4444;
+}
+
+.warning-icon-container {
+  margin-bottom: 15px;
+}
+
+.warning-icon {
+  font-size: 4rem;
+  animation: pulse 1s ease infinite;
+}
+
+.tab-warning-modal h2 {
+  color: #d32f2f;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.warning-message {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.warning-progress {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.warning-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.warning-dot.used {
+  background: #ff4444;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+.warning-remaining {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.warning-remaining.critical {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.warning-dismiss-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.warning-dismiss-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shakeIn {
+  0% { transform: scale(0.8) translateX(0); opacity: 0; }
+  20% { transform: scale(1.05) translateX(-10px); }
+  40% { transform: scale(1) translateX(10px); }
+  60% { transform: scale(1) translateX(-5px); }
+  80% { transform: scale(1) translateX(5px); }
+  100% { transform: scale(1) translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "What is 25% of 80?",
+    "options": ["15", "20", "25", "30"],
+    "correctAnswer": 1,
+    "explanation": "25% of 80 = (25/100) × 80 = 20"
+  },
+  {
+    "id": 2,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "If the simple interest on a sum of money at 5% per annum for 3 years is Rs. 1200, then the sum is:",
+    "options": ["Rs. 6000", "Rs. 7000", "Rs. 8000", "Rs. 9000"],
+    "correctAnswer": 2,
+    "explanation": "SI = (P × R × T) / 100. Therefore, P = (SI × 100) / (R × T) = (1200 × 100) / (5 × 3) = Rs. 8000"
+  },
+  {
+    "id": 3,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average of five numbers is 27. If one number is excluded, the average becomes 25. What is the excluded number?",
+    "options": ["30", "35", "40", "45"],
+    "correctAnswer": 1,
+    "explanation": "Sum of 5 numbers = 27 × 5 = 135. Sum of 4 numbers = 25 × 4 = 100. Excluded number = 135 - 100 = 35"
+  },
+  {
+    "id": 4,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "If A:B = 2:3 and B:C = 4:5, then A:C is:",
+    "options": ["8:15", "6:10", "2:5", "4:9"],
+    "correctAnswer": 0,
+    "explanation": "A:B = 2:3 and B:C = 4:5. Make B equal: A:B = 8:12, B:C = 12:15. Therefore A:C = 8:15"
+  },
+  {
+    "id": 5,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A can complete a work in 12 days and B can complete it in 18 days. How many days will they take to complete the work together?",
+    "options": ["6.5 days", "7.2 days", "8 days", "9 days"],
+    "correctAnswer": 1,
+    "explanation": "A's 1 day work = 1/12, B's 1 day work = 1/18. Together = 1/12 + 1/18 = 5/36. Days = 36/5 = 7.2 days"
+  },
+  {
+    "id": 6,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "A number is increased by 20% and then decreased by 20%. The net change is:",
+    "options": ["No change", "4% increase", "4% decrease", "2% decrease"],
+    "correctAnswer": 2,
+    "explanation": "Let x be the number. After increase: 1.2x. After decrease: 1.2x × 0.8 = 0.96x. Net change = 4% decrease."
+  },
+  {
+    "id": 7,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A shopkeeper sells an article for Rs. 450, making a profit of 25%. The cost price of the article is:",
+    "options": ["Rs. 320", "Rs. 350", "Rs. 360", "Rs. 380"],
+    "correctAnswer": 2,
+    "explanation": "SP = CP × (1 + Profit%). 450 = CP × 1.25. CP = 450/1.25 = Rs. 360"
+  },
+  {
+    "id": 8,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The compound interest on Rs. 10,000 at 10% per annum for 2 years is:",
+    "options": ["Rs. 2000", "Rs. 2100", "Rs. 2200", "Rs. 2500"],
+    "correctAnswer": 1,
+    "explanation": "CI = P(1+R/100)^T - P = 10000(1.1)^2 - 10000 = 12100 - 10000 = Rs. 2100"
+  },
+  {
+    "id": 9,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A car travels 240 km in 4 hours. What is its speed in m/s?",
+    "options": ["15 m/s", "16.67 m/s", "18 m/s", "20 m/s"],
+    "correctAnswer": 1,
+    "explanation": "Speed = 240/4 = 60 km/h = 60 × 5/18 = 16.67 m/s"
+  },
+  {
+    "id": 10,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "In an election, candidate A got 60% of total votes. If A got 2400 votes, the total number of votes is:",
+    "options": ["3600", "4000", "4200", "4800"],
+    "correctAnswer": 1,
+    "explanation": "60% of Total = 2400. Total = 2400 × 100/60 = 4000"
+  },
+  {
+    "id": 11,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "At what rate of interest will Rs. 5000 amount to Rs. 6500 in 3 years at simple interest?",
+    "options": ["8%", "10%", "12%", "15%"],
+    "correctAnswer": 1,
+    "explanation": "SI = 6500 - 5000 = 1500. R = (SI × 100)/(P × T) = (1500 × 100)/(5000 × 3) = 10%"
+  },
+  {
+    "id": 12,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "By selling 33 meters of cloth, a shopkeeper gains the selling price of 11 meters. The gain percent is:",
+    "options": ["33%", "50%", "33.33%", "25%"],
+    "correctAnswer": 1,
+    "explanation": "Let SP of 1m = Rs. 1. SP of 33m = 33. Gain = SP of 11m = 11. CP = 33-11 = 22. Gain% = (11/22)×100 = 50%"
+  },
+  {
+    "id": 13,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "If 6 men can complete a work in 20 days, how many men are required to complete it in 12 days?",
+    "options": ["8", "10", "12", "15"],
+    "correctAnswer": 1,
+    "explanation": "Men × Days = Constant. 6 × 20 = M × 12. M = 120/12 = 10 men"
+  },
+  {
+    "id": 14,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average age of 30 students is 15 years. If the teacher's age is included, the average increases by 1. The teacher's age is:",
+    "options": ["42 years", "44 years", "46 years", "48 years"],
+    "correctAnswer": 2,
+    "explanation": "Sum of students = 30 × 15 = 450. New average = 16, Total people = 31. New sum = 31 × 16 = 496. Teacher's age = 496 - 450 = 46"
+  },
+  {
+    "id": 15,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "The ratio of boys to girls in a class is 3:2. If there are 30 boys, the number of girls is:",
+    "options": ["15", "18", "20", "25"],
+    "correctAnswer": 2,
+    "explanation": "3/2 = 30/Girls. Girls = 30 × 2/3 = 20"
+  },
+  {
+    "id": 16,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "Two trains running in the same direction at 60 km/h and 40 km/h. The faster train passes a man in the slower train in 18 seconds. The length of the faster train is:",
+    "options": ["100 m", "120 m", "150 m", "80 m"],
+    "correctAnswer": 0,
+    "explanation": "Relative speed = 60-40 = 20 km/h = 20×5/18 = 50/9 m/s. Length = speed × time = (50/9) × 18 = 100 m"
+  },
+  {
+    "id": 17,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "If the price of sugar rises by 25%, by what percent should a family reduce consumption so that expenditure remains the same?",
+    "options": ["25%", "20%", "15%", "30%"],
+    "correctAnswer": 1,
+    "explanation": "Reduction = (R/(100+R)) × 100 = (25/125) × 100 = 20%"
+  },
+  {
+    "id": 18,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The difference between CI and SI on Rs. 5000 for 2 years at 4% per annum is:",
+    "options": ["Rs. 6", "Rs. 8", "Rs. 10", "Rs. 12"],
+    "correctAnswer": 1,
+    "explanation": "Diff = P × (R/100)^2 = 5000 × (4/100)^2 = 5000 × 0.0016 = Rs. 8"
+  },
+  {
+    "id": 19,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A man buys a cycle for Rs. 1400 and sells it at a loss of 15%. The selling price is:",
+    "options": ["Rs. 1100", "Rs. 1150", "Rs. 1190", "Rs. 1250"],
+    "correctAnswer": 2,
+    "explanation": "SP = CP × (1 - Loss%) = 1400 × 0.85 = Rs. 1190"
+  },
+  {
+    "id": 20,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A tap can fill a tank in 6 hours. After half the tank is filled, 3 more taps of the same capacity are opened. The total time to fill the tank is:",
+    "options": ["3 hrs 15 min", "3 hrs 30 min", "3 hrs 45 min", "4 hrs"],
+    "correctAnswer": 2,
+    "explanation": "Half tank filled in 3 hours. Remaining half by 4 taps: time = (1/2)/(4/6) = 3/4 hour = 45 min. Total = 3h 45min"
+  },
+  {
+    "id": 21,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "A sum of Rs. 12,500 amounts to Rs. 15,500 in 4 years at simple interest. The rate of interest is:",
+    "options": ["5%", "6%", "7%", "8%"],
+    "correctAnswer": 1,
+    "explanation": "SI = 15500 - 12500 = 3000. R = (3000 × 100)/(12500 × 4) = 6%"
+  },
+  {
+    "id": 22,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average weight of 8 persons increases by 2.5 kg when a new person replaces one weighing 65 kg. The weight of the new person is:",
+    "options": ["76 kg", "80 kg", "85 kg", "90 kg"],
+    "correctAnswer": 2,
+    "explanation": "Increase in total = 8 × 2.5 = 20 kg. New person's weight = 65 + 20 = 85 kg"
+  },
+  {
+    "id": 23,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "If 2/3 of A = 3/4 of B, then A:B is:",
+    "options": ["8:9", "9:8", "3:2", "2:3"],
+    "correctAnswer": 1,
+    "explanation": "2A/3 = 3B/4. A/B = (3×3)/(4×2) = 9/8. So A:B = 9:8"
+  },
+  {
+    "id": 24,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A person walks at 5 km/h for 6 hours and then at 4 km/h for 5 hours. His average speed is:",
+    "options": ["4.45 km/h", "4.55 km/h", "4.5 km/h", "4.6 km/h"],
+    "correctAnswer": 2,
+    "explanation": "Total distance = (5×6)+(4×5) = 30+20 = 50 km. Total time = 11 hrs. Avg speed = 50/11 ≈ 4.5 km/h"
+  },
+  {
+    "id": 25,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "Two numbers are 30% and 40% more than a third number. The ratio of the two numbers is:",
+    "options": ["13:14", "13:12", "15:14", "14:13"],
+    "correctAnswer": 0,
+    "explanation": "Let third = 100. First = 130, Second = 140. Ratio = 130:140 = 13:14"
+  },
+  {
+    "id": 26,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "A sum of money doubles itself at compound interest in 15 years. It will become 8 times in:",
+    "options": ["30 years", "40 years", "45 years", "60 years"],
+    "correctAnswer": 2,
+    "explanation": "Doubles in 15 yrs. 4 times in 30 yrs. 8 times in 45 yrs (since 8 = 2^3, time = 15 × 3)"
+  },
+  {
+    "id": 27,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A trader marks his goods 30% above cost price and allows a discount of 10%. His gain percent is:",
+    "options": ["15%", "17%", "18%", "20%"],
+    "correctAnswer": 1,
+    "explanation": "Let CP = 100. MP = 130. SP = 130 × 0.9 = 117. Gain% = 17%"
+  },
+  {
+    "id": 28,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A and B together can do a piece of work in 12 days. A alone can do it in 20 days. B alone can do it in:",
+    "options": ["25 days", "28 days", "30 days", "35 days"],
+    "correctAnswer": 2,
+    "explanation": "B's work rate = 1/12 - 1/20 = (5-3)/60 = 2/60 = 1/30. B alone = 30 days"
+  },
+  {
+    "id": 29,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "The simple interest on Rs. 4000 at 25/4% per annum for 73 days is:",
+    "options": ["Rs. 40", "Rs. 50", "Rs. 55", "Rs. 60"],
+    "correctAnswer": 1,
+    "explanation": "SI = (4000 × 25/4 × 73)/(100 × 365) = (4000 × 6.25 × 73)/36500 = Rs. 50"
+  },
+  {
+    "id": 30,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "A student's marks in 5 subjects are 72, 85, 90, 63, and 80. The average marks are:",
+    "options": ["76", "78", "80", "82"],
+    "correctAnswer": 1,
+    "explanation": "Average = (72+85+90+63+80)/5 = 390/5 = 78"
+  },
+  {
+    "id": 31,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new ratio becomes 12:23. The numbers are:",
+    "options": ["21 and 35", "30 and 50", "33 and 55", "36 and 60"],
+    "correctAnswer": 2,
+    "explanation": "3x-9 : 5x-9 = 12:23. 23(3x-9) = 12(5x-9). 69x-207 = 60x-108. 9x = 99. x=11. Numbers: 33 and 55"
+  },
+  {
+    "id": 32,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A boat can travel 20 km downstream in 2 hours and 10 km upstream in 2 hours. The speed of the stream is:",
+    "options": ["2.5 km/h", "3 km/h", "3.5 km/h", "4 km/h"],
+    "correctAnswer": 0,
+    "explanation": "Downstream speed = 20/2 = 10 km/h. Upstream speed = 10/2 = 5 km/h. Stream speed = (10-5)/2 = 2.5 km/h"
+  },
+  {
+    "id": 33,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "The population of a town is 10,000. It increases by 10% in the first year and 20% in the second year. The population after 2 years is:",
+    "options": ["12,000", "12,500", "13,000", "13,200"],
+    "correctAnswer": 3,
+    "explanation": "After 1st year = 10000 × 1.1 = 11000. After 2nd year = 11000 × 1.2 = 13200"
+  },
+  {
+    "id": 34,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The CI on Rs. 8000 at 5% per annum for 3 years is (approx):",
+    "options": ["Rs. 1200", "Rs. 1261", "Rs. 1300", "Rs. 1350"],
+    "correctAnswer": 1,
+    "explanation": "A = 8000(1.05)^3 = 8000 × 1.157625 = 9261. CI = 9261 - 8000 = Rs. 1261"
+  },
+  {
+    "id": 35,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A sells a bicycle to B at 10% profit. B sells it to C for Rs. 1210 at 10% profit. The cost price for A is:",
+    "options": ["Rs. 900", "Rs. 950", "Rs. 1000", "Rs. 1100"],
+    "correctAnswer": 2,
+    "explanation": "B's CP = 1210/1.1 = 1100. A's CP = 1100/1.1 = 1000"
+  },
+  {
+    "id": 36,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "10 men can finish a piece of work in 10 days. 10 women can finish the same work in 15 days. The number of days in which 10 men and 10 women together finish the same work is:",
+    "options": ["4 days", "5 days", "6 days", "8 days"],
+    "correctAnswer": 2,
+    "explanation": "10 men: 1/10 per day. 10 women: 1/15 per day. Together = 1/10+1/15 = 5/30 = 1/6. Days = 6"
+  },
+  {
+    "id": 37,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "In how many years will Rs. 2000 yield Rs. 480 as simple interest at 12% per annum?",
+    "options": ["1 year", "2 years", "3 years", "4 years"],
+    "correctAnswer": 1,
+    "explanation": "T = (SI × 100)/(P × R) = (480 × 100)/(2000 × 12) = 2 years"
+  },
+  {
+    "id": 38,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average salary of 15 workers is Rs. 200. If the manager's salary is added, the average becomes Rs. 225. The manager's salary is:",
+    "options": ["Rs. 500", "Rs. 550", "Rs. 600", "Rs. 625"],
+    "correctAnswer": 2,
+    "explanation": "Sum = 15 × 200 = 3000. New sum = 16 × 225 = 3600. Manager's salary = 3600 - 3000 = Rs. 600"
+  },
+  {
+    "id": 39,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "The salaries of A, B, and C are in the ratio 1:2:3. If only C's salary is increased by 10%, the new ratio becomes:",
+    "options": ["1:2:3.1", "10:20:33", "1:2:3.3", "10:20:30"],
+    "correctAnswer": 1,
+    "explanation": "Let salaries be x, 2x, 3x. After increase: x:2x:3.3x = 10:20:33"
+  },
+  {
+    "id": 40,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A man covers half of his journey at 6 km/h and the remaining half at 3 km/h. His average speed is:",
+    "options": ["3 km/h", "4 km/h", "4.5 km/h", "5 km/h"],
+    "correctAnswer": 1,
+    "explanation": "Average speed = (2 × S1 × S2)/(S1+S2) = (2×6×3)/(6+3) = 36/9 = 4 km/h"
+  },
+  {
+    "id": 41,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "If a number is decreased by 20%, what should it be increased by to get the original number?",
+    "options": ["20%", "22%", "25%", "30%"],
+    "correctAnswer": 2,
+    "explanation": "After 20% decrease: 0.8x. To get back x: increase = (x-0.8x)/0.8x × 100 = 0.2/0.8 × 100 = 25%"
+  },
+  {
+    "id": 42,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "At what rate percent per annum will Rs. 2000 amount to Rs. 2205 in 2 years at compound interest?",
+    "options": ["4%", "5%", "6%", "8%"],
+    "correctAnswer": 1,
+    "explanation": "2205 = 2000(1+R/100)^2. (1+R/100)^2 = 2205/2000 = 1.1025. 1+R/100 = 1.05. R = 5%"
+  },
+  {
+    "id": 43,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "If the cost price is 80% of the selling price, what is the profit percent?",
+    "options": ["20%", "22%", "25%", "30%"],
+    "correctAnswer": 2,
+    "explanation": "CP = 0.8 × SP. Profit = SP - CP = 0.2SP. Profit% = (0.2SP/0.8SP) × 100 = 25%"
+  },
+  {
+    "id": 44,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A alone can do a work in 15 days, B alone in 20 days. If they work on alternate days starting with A, the work will be finished in:",
+    "options": ["16 days", "17 days", "17.25 days", "18 days"],
+    "correctAnswer": 2,
+    "explanation": "In 2 days: A+B do 1/15+1/20 = 7/60. In 16 days: 8×7/60 = 56/60. Remaining = 4/60 = 1/15. Day 17 (A): 1/15, finished in 17.25 days."
+  },
+  {
+    "id": 45,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "Rs. 800 at 5% per annum compound interest will amount to Rs. 882 in approximately:",
+    "options": ["1 year", "2 years", "3 years", "4 years"],
+    "correctAnswer": 1,
+    "explanation": "882 = 800(1.05)^n. (1.05)^n = 1.1025. (1.05)^2 = 1.1025. n = 2 years"
+  },
+  {
+    "id": 46,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average of first 50 natural numbers is:",
+    "options": ["24.5", "25", "25.5", "26"],
+    "correctAnswer": 2,
+    "explanation": "Average = (n+1)/2 = (50+1)/2 = 25.5"
+  },
+  {
+    "id": 47,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "A mixture contains milk and water in ratio 5:1. On adding 5 litres of water, the ratio becomes 5:2. Quantity of milk in the mixture is:",
+    "options": ["16 litres", "20 litres", "25 litres", "30 litres"],
+    "correctAnswer": 2,
+    "explanation": "Milk=5x, Water=x. (5x)/(x+5) = 5/2. 10x = 5x+25. x=5. Milk = 25 litres"
+  },
+  {
+    "id": 48,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A train 150 m long passes a platform 250 m long in 20 seconds. The speed of the train is:",
+    "options": ["54 km/h", "60 km/h", "72 km/h", "80 km/h"],
+    "correctAnswer": 2,
+    "explanation": "Total distance = 150+250 = 400m. Speed = 400/20 = 20 m/s = 20 × 18/5 = 72 km/h"
+  },
+  {
+    "id": 49,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "In a class, 60% students are boys. If 30% of boys and 40% of girls passed an exam, what is the total pass percentage?",
+    "options": ["32%", "34%", "36%", "38%"],
+    "correctAnswer": 1,
+    "explanation": "Boys=60, Girls=40. Passed = 0.3×60 + 0.4×40 = 18+16 = 34. Pass% = 34%"
+  },
+  {
+    "id": 50,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The CI on a certain sum for 2 years at 10% per annum is Rs. 525. The SI on the same sum at the same rate for 2 years is:",
+    "options": ["Rs. 400", "Rs. 450", "Rs. 500", "Rs. 550"],
+    "correctAnswer": 2,
+    "explanation": "CI = P[(1.1)^2 - 1] = P×0.21 = 525. P = 2500. SI = 2500×10×2/100 = Rs. 500"
+  },
+  {
+    "id": 51,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A merchant bought goods worth Rs. 6000 and sold half at 10% profit. At what profit percent should he sell the rest to get 25% overall profit?",
+    "options": ["30%", "35%", "40%", "45%"],
+    "correctAnswer": 2,
+    "explanation": "Total SP needed = 6000 × 1.25 = 7500. SP of first half = 3000 × 1.1 = 3300. SP of rest = 7500-3300 = 4200. Profit% = (4200-3000)/3000 × 100 = 40%"
+  },
+  {
+    "id": 52,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A pipe can fill a tank in 15 minutes and another pipe can empty it in 20 minutes. If both pipes are opened together, the tank will be full in:",
+    "options": ["45 min", "50 min", "55 min", "60 min"],
+    "correctAnswer": 3,
+    "explanation": "Net filling = 1/15 - 1/20 = (4-3)/60 = 1/60. Time = 60 minutes"
+  },
+  {
+    "id": 53,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "What annual installment will discharge a debt of Rs. 1092 due in 3 years at 12% simple interest?",
+    "options": ["Rs. 300", "Rs. 325", "Rs. 350", "Rs. 360"],
+    "correctAnswer": 1,
+    "explanation": "Let installment = x. x(1+2×12/100) + x(1+12/100) + x = 1092. 1.24x + 1.12x + x = 1092. 3.36x = 1092. x = Rs. 325"
+  },
+  {
+    "id": 54,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "A batsman has an average of 40 runs in 20 innings. How many runs must he score in his 21st inning to raise his average to 42?",
+    "options": ["72", "78", "82", "84"],
+    "correctAnswer": 2,
+    "explanation": "Total now = 40×20 = 800. Required total = 42×21 = 882. Runs needed = 882-800 = 82"
+  },
+  {
+    "id": 55,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "Rs. 510 is divided among A, B, and C such that A gets 2/3 of what B gets, and B gets 1/4 of what C gets. C's share is:",
+    "options": ["Rs. 300", "Rs. 320", "Rs. 340", "Rs. 360"],
+    "correctAnswer": 3,
+    "explanation": "B = C/4, A = 2B/3 = C/6. A+B+C = C/6+C/4+C = (2C+3C+12C)/12 = 17C/12 = 510. C = 360"
+  },
+  {
+    "id": 56,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A car travels the first 1/3 of a distance at 10 km/h, the next 1/3 at 20 km/h, and the last 1/3 at 60 km/h. The average speed is:",
+    "options": ["16 km/h", "18 km/h", "20 km/h", "24 km/h"],
+    "correctAnswer": 1,
+    "explanation": "Avg speed = 3/(1/10+1/20+1/60) = 3/((6+3+1)/60) = 3/(10/60) = 180/10 = 18 km/h"
+  },
+  {
+    "id": 57,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "A's income is 20% more than B's income. By how much percent is B's income less than A's?",
+    "options": ["15%", "16.67%", "20%", "25%"],
+    "correctAnswer": 1,
+    "explanation": "A = 1.2B. Diff = A-B = 0.2B. % less = (0.2B/1.2B)×100 = 16.67%"
+  },
+  {
+    "id": 58,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "If a sum of Rs. 12,000 is deposited at compound interest for 3 years at 10%, the amount is:",
+    "options": ["Rs. 15,600", "Rs. 15,720", "Rs. 15,972", "Rs. 16,200"],
+    "correctAnswer": 2,
+    "explanation": "A = 12000(1.1)^3 = 12000 × 1.331 = Rs. 15,972"
+  },
+  {
+    "id": 59,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A man sells two articles, one at 20% profit and another at 20% loss. If each was sold for Rs. 600, what is the overall result?",
+    "options": ["Rs. 50 loss", "No profit/loss", "Rs. 25 loss", "Rs. 50 profit"],
+    "correctAnswer": 0,
+    "explanation": "CP1 = 600/1.2 = 500. CP2 = 600/0.8 = 750. Total CP = 1250. Total SP = 1200. Loss = Rs. 50"
+  },
+  {
+    "id": 60,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "20 workers can build a wall in 30 days. How many workers are needed to build the wall in 10 days?",
+    "options": ["40", "50", "55", "60"],
+    "correctAnswer": 3,
+    "explanation": "Workers × Days = Constant. 20 × 30 = W × 10. W = 600/10 = 60"
+  },
+  {
+    "id": 61,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "A candidate got 35% of the total votes and lost by 1500 votes. The total number of votes is:",
+    "options": ["4000", "4500", "5000", "6000"],
+    "correctAnswer": 2,
+    "explanation": "Winner got 65%. Difference = 65%-35% = 30% = 1500. Total = 1500/0.30 = 5000"
+  },
+  {
+    "id": 62,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average marks of three batches of 55, 60 and 45 students are 50, 55, and 60 respectively. The average marks of all the students is:",
+    "options": ["52.5", "54.68", "55", "56.25"],
+    "correctAnswer": 1,
+    "explanation": "Total = 55×50+60×55+45×60 = 2750+3300+2700 = 8750. Total students = 160. Avg = 8750/160 = 54.68"
+  },
+  {
+    "id": 63,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "A sum of money at simple interest amounts to Rs. 815 in 3 years and Rs. 854 in 4 years. The sum is:",
+    "options": ["Rs. 650", "Rs. 690", "Rs. 698", "Rs. 700"],
+    "correctAnswer": 2,
+    "explanation": "SI for 1 year = 854-815 = 39. SI for 3 years = 117. P = 815-117 = 698."
+  },
+  {
+    "id": 64,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "The incomes of A and B are in the ratio 3:2 and their expenditures in the ratio 5:3. If each saves Rs. 1000, A's income is:",
+    "options": ["Rs. 5000", "Rs. 6000", "Rs. 7500", "Rs. 9000"],
+    "correctAnswer": 1,
+    "explanation": "Income: 3x, 2x. Expenditure: 5y, 3y. 3x-5y=1000, 2x-3y=1000. Solving: x=2000. A's income = 6000"
+  },
+  {
+    "id": 65,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "Two trains of length 100m and 200m are running towards each other at 54 km/h and 36 km/h. Time to cross each other is:",
+    "options": ["10 sec", "12 sec", "15 sec", "18 sec"],
+    "correctAnswer": 1,
+    "explanation": "Relative speed = 54+36 = 90 km/h = 25 m/s. Distance = 100+200 = 300m. Time = 300/25 = 12 sec"
+  },
+  {
+    "id": 66,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The population of a city increases at the rate of 5% per annum. If the present population is 1,85,220, what was it 3 years ago?",
+    "options": ["1,50,000", "1,55,000", "1,60,000", "1,65,000"],
+    "correctAnswer": 2,
+    "explanation": "P(1.05)^3 = 185220. P = 185220/1.157625 = 1,60,000"
+  },
+  {
+    "id": 67,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "By selling an article for Rs. 480, a person loses 20%. To gain 20%, he must sell it for:",
+    "options": ["Rs. 670", "Rs. 700", "Rs. 720", "Rs. 750"],
+    "correctAnswer": 2,
+    "explanation": "CP = 480/0.8 = 600. To gain 20%: SP = 600 × 1.2 = Rs. 720"
+  },
+  {
+    "id": 68,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "If 8 men or 12 women can do a work in 10 days, how many days will 4 men and 6 women take to do the same work?",
+    "options": ["8 days", "10 days", "12 days", "15 days"],
+    "correctAnswer": 1,
+    "explanation": "8M = 12W, so 1M = 1.5W. 4M+6W = 6W+6W = 12W. 12W do work in 10 days."
+  },
+  {
+    "id": 69,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A person takes 3 hours to walk a certain distance and rides back in 1 hour. How long would it take to walk both ways?",
+    "options": ["4 hours", "5 hours", "6 hours", "7 hours"],
+    "correctAnswer": 2,
+    "explanation": "Walking takes 3 hours one way. Both ways = 3+3 = 6 hours"
+  },
+  {
+    "id": 70,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average of 11 results is 60. If the average of first 6 results is 58 and that of last 6 is 63, find the 6th result.",
+    "options": ["60", "62", "64", "66"],
+    "correctAnswer": 3,
+    "explanation": "Total = 11×60 = 660. First 6 = 6×58 = 348. Last 6 = 6×63 = 378. 6th result = 348+378-660 = 66"
+  },
+  {
+    "id": 71,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "The price of rice falls by 20%. How much more rice can a person buy for the same money?",
+    "options": ["20%", "25%", "30%", "33%"],
+    "correctAnswer": 1,
+    "explanation": "More quantity = (decrease%/(100-decrease%)) × 100 = (20/80) × 100 = 25%"
+  },
+  {
+    "id": 72,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "A sum of money trebles itself in 16 years at simple interest. The rate of interest is:",
+    "options": ["10%", "10.5%", "12%", "12.5%"],
+    "correctAnswer": 3,
+    "explanation": "SI = 2P (since 3P-P = 2P). R = (2P×100)/(P×16) = 12.5%"
+  },
+  {
+    "id": 73,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "If x:y = 3:4, then (4x+5y):(5x+2y) is:",
+    "options": ["32:23", "32:21", "23:32", "31:22"],
+    "correctAnswer": 0,
+    "explanation": "Let x=3k, y=4k. (12k+20k):(15k+8k) = 32k:23k = 32:23"
+  },
+  {
+    "id": 74,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A thief is noticed by a policeman at a distance of 200m. The thief runs at 10 km/h and the policeman at 11 km/h. The policeman will catch the thief in:",
+    "options": ["10 min", "12 min", "15 min", "20 min"],
+    "correctAnswer": 1,
+    "explanation": "Relative speed = 11-10 = 1 km/h. Time = 0.2/1 = 0.2 hours = 12 minutes"
+  },
+  {
+    "id": 75,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The effective annual rate of interest corresponding to a nominal rate of 6% per annum compounded half-yearly is:",
+    "options": ["6%", "6.06%", "6.07%", "6.09%"],
+    "correctAnswer": 3,
+    "explanation": "Effective rate = (1+0.03)^2 - 1 = 1.0609 - 1 = 0.0609 = 6.09%"
+  },
+  {
+    "id": 76,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "The cost price of 20 articles is the same as the selling price of 16 articles. The gain percent is:",
+    "options": ["20%", "25%", "30%", "33.33%"],
+    "correctAnswer": 1,
+    "explanation": "Let CP of 1 article = 1. CP of 20 = SP of 16. 20 = 16×SP. SP = 20/16 = 1.25. Gain% = 25%"
+  },
+  {
+    "id": 77,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A cistern can be filled by a tap in 4 hours while it can be emptied by another tap in 9 hours. If both taps are opened, the cistern will be filled in:",
+    "options": ["5.2 hours", "6.4 hours", "7.2 hours", "8 hours"],
+    "correctAnswer": 2,
+    "explanation": "Net rate = 1/4 - 1/9 = (9-4)/36 = 5/36. Time = 36/5 = 7.2 hours"
+  },
+  {
+    "id": 78,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "If A earns 33.33% more than B, how much percent does B earn less than A?",
+    "options": ["25%", "30%", "33.33%", "20%"],
+    "correctAnswer": 0,
+    "explanation": "A = 4B/3. Difference = A-B = B/3. B earns less by (B/3)/(4B/3) × 100 = 25%"
+  },
+  {
+    "id": 79,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average temperature for Monday, Tuesday, and Wednesday was 40°C. The average for Tuesday, Wednesday, and Thursday was 41°C. If Thursday's temperature was 42°C, Monday's temperature was:",
+    "options": ["37°C", "38°C", "39°C", "40°C"],
+    "correctAnswer": 2,
+    "explanation": "M+T+W = 120. T+W+Th = 123. Subtracting: Th-M = 3. M = 42-3 = 39°C"
+  },
+  {
+    "id": 80,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "If Rs. 1000 is lent at compound interest of 5% per annum, the amount after 2 years is:",
+    "options": ["Rs. 1100", "Rs. 1102.50", "Rs. 1105", "Rs. 1110"],
+    "correctAnswer": 1,
+    "explanation": "A = 1000(1.05)^2 = 1000 × 1.1025 = Rs. 1102.50"
+  },
+  {
+    "id": 81,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "A bag contains coins of Rs. 1, 50p and 25p in the ratio 2:3:5. If the total value is Rs. 228, the number of 50 paise coins is:",
+    "options": ["36", "72", "108", "144"],
+    "correctAnswer": 3,
+    "explanation": "Value: 2x×1 + 3x×0.5 + 5x×0.25 = 4.75x = 228. x=48. Number of 50p coins = 3×48 = 144"
+  },
+  {
+    "id": 82,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A man rows upstream 12 km and downstream 28 km taking 5 hours each time. The velocity of the current is:",
+    "options": ["1.4 km/h", "1.6 km/h", "1.8 km/h", "2 km/h"],
+    "correctAnswer": 1,
+    "explanation": "Upstream speed = 12/5 = 2.4 km/h. Downstream speed = 28/5 = 5.6 km/h. Current = (5.6-2.4)/2 = 1.6 km/h"
+  },
+  {
+    "id": 83,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "A student scores 80% in English, 75% in Hindi, and 60% in Maths. If the max marks are 100, 100, and 200 respectively, the overall percentage is:",
+    "options": ["65%", "67.5%", "68.75%", "70%"],
+    "correctAnswer": 2,
+    "explanation": "Total marks = 80 + 75 + 120 = 275. Max = 400. Percentage = (275/400) × 100 = 68.75%"
+  },
+  {
+    "id": 84,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "The present worth of Rs. 169 due in 2 years at 30% per annum compound interest is:",
+    "options": ["Rs. 80", "Rs. 90", "Rs. 100", "Rs. 110"],
+    "correctAnswer": 2,
+    "explanation": "PW = 169/(1.3)^2 = 169/1.69 = Rs. 100"
+  },
+  {
+    "id": 85,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A retailer buys a radio for Rs. 225. His overhead expenses are Rs. 15. If he sells the radio for Rs. 300, his profit percent is:",
+    "options": ["20%", "25%", "22.5%", "18%"],
+    "correctAnswer": 1,
+    "explanation": "Total CP = 225+15 = 240. SP = 300. Profit = 60. Profit% = (60/240) × 100 = 25%"
+  },
+  {
+    "id": 86,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A does 4/5 of a work in 20 days. He then calls B and they together finish the remaining work in 3 days. How long would B alone take to do the whole work?",
+    "options": ["37 days", "37.5 days", "40 days", "42 days"],
+    "correctAnswer": 1,
+    "explanation": "A completes full work in 25 days (rate=1/25). Remaining = 1/5. A+B in 3 days: 3(1/25+1/B)=1/5. 1/B=1/15-1/25=2/75. B=37.5 days"
+  },
+  {
+    "id": 87,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "A certain sum of money amounts to Rs. 1008 in 2 years and Rs. 1164 in 3.5 years. The sum is:",
+    "options": ["Rs. 800", "Rs. 850", "Rs. 900", "Rs. 950"],
+    "correctAnswer": 0,
+    "explanation": "SI for 1.5 years = 1164-1008 = 156. SI per year = 104. SI for 2 years = 208. P = 1008-208 = 800."
+  },
+  {
+    "id": 88,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average score of a cricketer in 4 matches is 58. His highest score exceeds his lowest by 20. Without the highest and lowest, the average is 55. His highest score is:",
+    "options": ["62", "66", "71", "76"],
+    "correctAnswer": 2,
+    "explanation": "Total = 4×58 = 232. Two middle scores = 2×55 = 110. H+L = 122. H-L = 20. H = (122+20)/2 = 71."
+  },
+  {
+    "id": 89,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "Gold is 19 times as heavy as water and copper is 9 times. The ratio in which they should be mixed to get an alloy 15 times as heavy as water is:",
+    "options": ["1:1", "2:1", "3:2", "5:3"],
+    "correctAnswer": 2,
+    "explanation": "By alligation: 19x+9y = 15(x+y). 4x=6y. x/y=3/2. Ratio gold:copper = 3:2"
+  },
+  {
+    "id": 90,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A bus travels a distance of 300 km at a uniform speed. If the speed were increased by 5 km/h, it would have taken 2 hours less. The original speed is:",
+    "options": ["20 km/h", "25 km/h", "30 km/h", "35 km/h"],
+    "correctAnswer": 1,
+    "explanation": "300/s - 300/(s+5) = 2. 300×5 / s(s+5) = 2. s²+5s-750=0. (s+30)(s-25)=0. s = 25 km/h"
+  },
+  {
+    "id": 91,
+    "category": "Arithmetic",
+    "topic": "Percentages",
+    "question": "A reduction of 20% in the price of wheat enables a person to buy 3.5 kg more for Rs. 770. The reduced price per kg is:",
+    "options": ["Rs. 44", "Rs. 42", "Rs. 40", "Rs. 38"],
+    "correctAnswer": 0,
+    "explanation": "Original price = P. New = 0.8P. 770/0.8P - 770/P = 3.5. P = 55. Reduced = 0.8×55 = Rs. 44"
+  },
+  {
+    "id": 92,
+    "category": "Arithmetic",
+    "topic": "Compound Interest",
+    "question": "A sum of Rs. 10,000 is borrowed at 8% per annum compounded annually. What amount is to be repaid at the end of 2 years?",
+    "options": ["Rs. 11,600", "Rs. 11,664", "Rs. 11,700", "Rs. 11,800"],
+    "correctAnswer": 1,
+    "explanation": "A = 10000(1.08)^2 = 10000 × 1.1664 = Rs. 11,664"
+  },
+  {
+    "id": 93,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "If an article is sold at a gain of 6% instead of a loss of 6%, the seller gets Rs. 72 more. The cost price is:",
+    "options": ["Rs. 500", "Rs. 550", "Rs. 600", "Rs. 650"],
+    "correctAnswer": 2,
+    "explanation": "1.06×CP - 0.94×CP = 72. 0.12×CP = 72. CP = Rs. 600"
+  },
+  {
+    "id": 94,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "Three taps A, B and C can fill a tank in 12, 15 and 20 hours respectively. If A is open all the time and B/C are open alternately for one hour each, the tank will be full in:",
+    "options": ["5 hours", "6 hours", "7 hours", "8 hours"],
+    "correctAnswer": 2,
+    "explanation": "Hour 1: A+B = 1/12+1/15 = 9/60. Hour 2: A+C = 1/12+1/20 = 8/60. In 2 hrs: 17/60. In 6 hrs: 51/60. Remaining = 9/60. Hour 7: A+B fills 9/60. Done in 7 hrs."
+  },
+  {
+    "id": 95,
+    "category": "Data Interpretation",
+    "topic": "Averages",
+    "question": "The average of 10 numbers is 7. If each number is multiplied by 12, the average of the new set of numbers is:",
+    "options": ["7", "19", "72", "84"],
+    "correctAnswer": 3,
+    "explanation": "New average = Old average × 12 = 7 × 12 = 84"
+  },
+  {
+    "id": 96,
+    "category": "Arithmetic",
+    "topic": "Simple Interest",
+    "question": "The difference between the SI and CI on Rs. 1200 for 1 year at 10% per annum compounded half-yearly is:",
+    "options": ["Rs. 2", "Rs. 3", "Rs. 4", "Rs. 5"],
+    "correctAnswer": 1,
+    "explanation": "SI = 1200×10×1/100 = 120. CI (half-yearly) = 1200(1.05)^2 - 1200 = 123. Diff = Rs. 3"
+  },
+  {
+    "id": 97,
+    "category": "Arithmetic",
+    "topic": "Ratio and Proportion",
+    "question": "In a school, the ratio of boys to girls is 5:3. If 50 girls are added, the ratio becomes 5:4. How many boys are in the school?",
+    "options": ["200", "225", "250", "300"],
+    "correctAnswer": 2,
+    "explanation": "Boys=5x, Girls=3x. 5x/(3x+50)=5/4. 20x=15x+250. 5x=250. x=50. Boys=250"
+  },
+  {
+    "id": 98,
+    "category": "Arithmetic",
+    "topic": "Time and Distance",
+    "question": "A man walks at 4 km/h. If he had walked 1 km/h faster, he would have taken 1 hour less for a journey. The distance is:",
+    "options": ["15 km", "18 km", "20 km", "24 km"],
+    "correctAnswer": 2,
+    "explanation": "D/4 - D/5 = 1. (5D-4D)/20 = 1. D = 20 km"
+  },
+  {
+    "id": 99,
+    "category": "Arithmetic",
+    "topic": "Profit and Loss",
+    "question": "A shopkeeper offers a discount of 10% then another discount of 20%. The total effective discount is:",
+    "options": ["28%", "30%", "26%", "24%"],
+    "correctAnswer": 0,
+    "explanation": "Effective price = 0.9 × 0.8 = 0.72. Discount = 1-0.72 = 0.28 = 28%"
+  },
+  {
+    "id": 100,
+    "category": "Arithmetic",
+    "topic": "Time and Work",
+    "question": "A can finish a work in 24 days, B in 9 days, and C in 12 days. B and C start the work but leave after 3 days. The remaining work is done by A in:",
+    "options": ["8 days", "9 days", "10 days", "12 days"],
+    "correctAnswer": 2,
+    "explanation": "B+C in 3 days = 3(1/9+1/12) = 3×7/36 = 7/12. Remaining = 5/12. A does it in (5/12)/(1/24) = (5/12)×24 = 10 days"
+  }
+]
