@@ -526,7 +526,12 @@
     "category": "Arithmetic",
     "topic": "Profit and Loss",
     "question": "A man sells two articles, one at 20% profit and another at 20% loss. If each was sold for Rs. 600, what is the overall result?",
-    "options": ["Rs. 50 loss", "No profit/loss", "Rs. 25 loss", "Rs. 50 profit"],
+    "options": [
+      "Rs. 50 loss",
+      "No profit/loss",
+      "Rs. 25 loss",
+      "Rs. 50 profit"
+    ],
     "correctAnswer": 0,
     "explanation": "CP1 = 600/1.2 = 500. CP2 = 600/0.8 = 750. Total CP = 1250. Total SP = 1200. Loss = Rs. 50"
   },

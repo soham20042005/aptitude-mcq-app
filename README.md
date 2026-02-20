@@ -5,18 +5,21 @@ A full-stack React application with MySQL backend for aptitude testing, featurin
 ## ✨ Features
 
 ### 🔐 Authentication System
+
 - User registration and login
 - JWT-based authentication
 - Secure password hashing with bcrypt
 - Session management
 
 ### 📊 Dashboard
+
 - View personal statistics (tests taken, average score, best score)
 - Track complete test history
 - See performance trends
 - Compare with leaderboard of top performers
 
 ### 🎯 Interactive Testing
+
 - Real-time timer
 - Animated UI transitions
 - Progress tracking with visual indicators
@@ -24,6 +27,7 @@ A full-stack React application with MySQL backend for aptitude testing, featurin
 - Detailed explanations for each answer
 
 ### 💾 Database Integration
+
 - MySQL database for persistent storage
 - User management
 - Test session tracking
@@ -32,16 +36,18 @@ A full-stack React application with MySQL backend for aptitude testing, featurin
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js (v16+)
 - MySQL Server (v5.7+)
 
 ### Installation
 
 1. **Setup MySQL Database**
+
    ```bash
    # Login to MySQL
    mysql -u root -p
-   
+
    # Create database and import schema
    CREATE DATABASE aptitude_db;
    USE aptitude_db;
@@ -49,19 +55,22 @@ A full-stack React application with MySQL backend for aptitude testing, featurin
    ```
 
 2. **Configure Backend**
+
    ```bash
    cd backend
    npm install
-   
+
    # Copy .env.example to .env and update with your MySQL credentials
    cp .env.example .env
    # Edit .env file with your database credentials
    ```
 
 3. **Start Backend Server**
+
    ```bash
    npm run dev
    ```
+
    Backend will run on http://localhost:5000
 
 4. **Start Frontend** (in new terminal)
@@ -78,6 +87,7 @@ Simply double-click `start.bat` to start both servers automatically!
 ## 📖 Complete Documentation
 
 See **[SETUP_GUIDE.md](SETUP_GUIDE.md)** for:
+
 - Detailed installation steps
 - Troubleshooting guide
 - API documentation
@@ -123,12 +133,14 @@ aptitude-mcq-app/
 ## 🔧 Tech Stack
 
 **Frontend:**
+
 - React 18
 - Vite
 - CSS3 with animations
 - Local storage for session persistence
 
 **Backend:**
+
 - Node.js & Express.js
 - MySQL2 (database driver)
 - JWT for authentication
@@ -153,6 +165,7 @@ Edit `src/data/questions.json` to add questions from your R.S. Aggarwal book:
 ```
 
 ### Available Categories:
+
 - Arithmetic (Percentages, Profit/Loss, Time & Work, etc.)
 - Algebra
 - Geometry
@@ -161,15 +174,18 @@ Edit `src/data/questions.json` to add questions from your R.S. Aggarwal book:
 ## 🐛 Troubleshooting
 
 **Database Connection Error?**
+
 - ✅ Verify MySQL is running
 - ✅ Check credentials in `backend/.env`
 - ✅ Ensure database `aptitude_db` exists
 
 **Port Already in Use?**
+
 - Change PORT in `backend/.env`
 - Update API_URL in `src/services/api.js`
 
 **CORS Error?**
+
 - Ensure backend is running on http://localhost:5000
 - Check CORS is enabled in server.js
 
@@ -178,11 +194,13 @@ See [SETUP_GUIDE.md](SETUP_GUIDE.md) for more troubleshooting solutions.
 ## 📊 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/register` - Register new user
 - `POST /api/auth/login` - Login user
 - `GET /api/auth/me` - Get current user profile
 
 ### Scores & Statistics
+
 - `POST /api/scores/save` - Save test session (requires auth)
 - `GET /api/scores/history` - Get user test history (requires auth)
 - `GET /api/scores/statistics` - Get user statistics (requires auth)

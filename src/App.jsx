@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import Auth from './components/Auth';
-import Dashboard from './components/Dashboard';
-import Question from './components/Question';
-import Navigation from './components/Navigation';
-import ScoreCard from './components/ScoreCard';
-import TabWarning from './components/TabWarning';
-import apiService from './services/api';
-import allQuestions from './data/questions.json';
-import './App.css';
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import Auth from "./components/Auth";
+import Dashboard from "./components/Dashboard";
+import Question from "./components/Question";
+import Navigation from "./components/Navigation";
+import ScoreCard from "./components/ScoreCard";
+import TabWarning from "./components/TabWarning";
+import apiService from "./services/api";
+import allQuestions from "./data/questions.json";
+import "./App.css";
 
 // Shuffle array using Fisher-Yates algorithm
 function shuffleArray(array) {
@@ -42,6 +42,7 @@ function App() {
   const MAX_WARNINGS = 3;
 
   const submitRef = useRef(null);
+  const submittedRef = useRef(false); // guard against double-submit
 
   // Check if user is already logged in
   useEffect(() => {
@@ -55,7 +56,8 @@ function App() {
 
   // Auto-submit handler (needs to be a ref so the timer/tab callbacks always have latest)
   const handleAutoSubmit = useCallback(async () => {
-    if (showResults) return;
+    if (showResults || submittedRef.current) return;
+    submittedRef.current = true;
     const score = calculateScoreFromState();
 
     if (isAuthenticated) {
@@ -69,24 +71,37 @@ function App() {
           question: q.question,
           userAnswer: answers[index],
           correctAnswer: q.correctAnswer,
-          isCorrect: answers[index] === q.correctAnswer
-        }))
+          isCorrect: answers[index] === q.correctAnswer,
+        })),
       };
-      try { await apiService.saveScore(scoreData); } catch (e) { console.error('Error saving score:', e); }
+      try {
+        await apiService.saveScore(scoreData);
+      } catch (e) {
+        console.error("Error saving score:", e);
+      }
     }
     setShowResults(true);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [answers, questions, isAuthenticated, testDuration, timeRemaining, showResults]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    answers,
+    questions,
+    isAuthenticated,
+    testDuration,
+    timeRemaining,
+    showResults,
+  ]);
 
   // Keep a ref to the latest auto-submit
-  useEffect(() => { submitRef.current = handleAutoSubmit; }, [handleAutoSubmit]);
+  useEffect(() => {
+    submitRef.current = handleAutoSubmit;
+  }, [handleAutoSubmit]);
 
   // ─── Countdown timer ───
   useEffect(() => {
     let timer;
     if (testStarted && !showResults && timeRemaining > 0) {
       timer = setInterval(() => {
-        setTimeRemaining(prev => {
+        setTimeRemaining((prev) => {
           if (prev <= 1) {
             clearInterval(timer);
             // Time's up – auto submit
@@ -101,28 +116,23 @@ function App() {
   }, [testStarted, showResults, timeRemaining]);
 
   // ─── Tab / visibility change detection ───
+  const tabSwitchCooldown = useRef(false);
+
   useEffect(() => {
     if (!testStarted || showResults) return;
 
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        setTabWarnings(prev => {
-          const newCount = prev + 1;
-          if (newCount >= MAX_WARNINGS) {
-            // Auto-submit on 3rd warning
-            setTimeout(() => submitRef.current?.(), 100);
-          } else {
-            setShowTabWarning(true);
-          }
-          return newCount;
-        });
-      }
-    };
+    const handleTabSwitch = () => {
+      // Debounce: both visibilitychange and blur can fire for a single tab switch
+      if (tabSwitchCooldown.current) return;
+      tabSwitchCooldown.current = true;
+      setTimeout(() => {
+        tabSwitchCooldown.current = false;
+      }, 500);
 
-    const handleWindowBlur = () => {
-      setTabWarnings(prev => {
+      setTabWarnings((prev) => {
         const newCount = prev + 1;
         if (newCount >= MAX_WARNINGS) {
+          // Auto-submit on 3rd warning
           setTimeout(() => submitRef.current?.(), 100);
         } else {
           setShowTabWarning(true);
@@ -131,12 +141,20 @@ function App() {
       });
     };
 
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    window.addEventListener('blur', handleWindowBlur);
+    const handleVisibilityChange = () => {
+      if (document.hidden) handleTabSwitch();
+    };
+
+    const handleWindowBlur = () => {
+      handleTabSwitch();
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("blur", handleWindowBlur);
 
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-      window.removeEventListener('blur', handleWindowBlur);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("blur", handleWindowBlur);
     };
   }, [testStarted, showResults]);
 
@@ -146,14 +164,18 @@ function App() {
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) setCurrentQuestionIndex(currentQuestionIndex + 1);
+    if (currentQuestionIndex < questions.length - 1)
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
 
   const handlePrev = () => {
-    if (currentQuestionIndex > 0) setCurrentQuestionIndex(currentQuestionIndex - 1);
+    if (currentQuestionIndex > 0)
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
   };
 
   const handleSubmit = async () => {
+    if (submittedRef.current) return;
+    submittedRef.current = true;
     const score = calculateScoreFromState();
 
     if (isAuthenticated) {
@@ -167,10 +189,14 @@ function App() {
           question: q.question,
           userAnswer: answers[index],
           correctAnswer: q.correctAnswer,
-          isCorrect: answers[index] === q.correctAnswer
-        }))
+          isCorrect: answers[index] === q.correctAnswer,
+        })),
       };
-      try { await apiService.saveScore(scoreData); } catch (error) { console.error('Error saving score:', error); }
+      try {
+        await apiService.saveScore(scoreData);
+      } catch (error) {
+        console.error("Error saving score:", error);
+      }
     }
     setShowResults(true);
   };
@@ -185,6 +211,7 @@ function App() {
     setTabWarnings(0);
     setShowTabWarning(false);
     setQuestions([]);
+    submittedRef.current = false;
   };
 
   const calculateScoreFromState = () => {
@@ -234,7 +261,9 @@ function App() {
   }
 
   if (showDashboard && !testStarted) {
-    return <Dashboard user={user} onStartTest={startTest} onLogout={handleLogout} />;
+    return (
+      <Dashboard user={user} onStartTest={startTest} onLogout={handleLogout} />
+    );
   }
 
   if (showResults) {
@@ -245,7 +274,7 @@ function App() {
           score={calculateScoreFromState()}
           totalQuestions={questions.length}
           onRestart={handleRestart}
-          answers={Object.values(answers)}
+          answers={answers}
           questions={questions}
           timeElapsed={totalTime}
         />
@@ -268,7 +297,9 @@ function App() {
         <div className="header-container">
           <div>
             <h1>Aptitude MCQ Test</h1>
-            <p>{questions.length} Questions • {testDuration} Minutes</p>
+            <p>
+              {questions.length} Questions • {testDuration} Minutes
+            </p>
           </div>
           <div className="header-right">
             {tabWarnings > 0 && (
@@ -276,13 +307,26 @@ function App() {
                 ⚠️ {tabWarnings}/{MAX_WARNINGS} warnings
               </div>
             )}
-            <button className="back-to-dashboard-btn" onClick={() => {
-              if (window.confirm('Are you sure you want to exit? Your progress will be lost.')) {
-                handleRestart();
-              }
-            }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M3 12h18M3 12l6-6M3 12l6 6" strokeWidth="2"/>
+            <button
+              className="back-to-dashboard-btn"
+              onClick={() => {
+                if (
+                  window.confirm(
+                    "Are you sure you want to exit? Your progress will be lost.",
+                  )
+                ) {
+                  handleRestart();
+                }
+              }}
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M3 12h18M3 12l6-6M3 12l6 6" strokeWidth="2" />
               </svg>
               Exit Test
             </button>
