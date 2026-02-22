@@ -141,6 +141,7 @@ const ScoreCard = ({
       <button className="restart-btn" onClick={onRestart}>
         Take Test Again
       </button>
+      <button className="restart-btn" onClick={() => window.location.href = "/Dashboard.jsx"}>back</button>
     </div>
   );
 };

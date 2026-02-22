@@ -1,117 +1,118 @@
+/* ── Tab Warning Modal ── */
 .tab-warning-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  animation: fadeIn 0.2s ease;
-  backdrop-filter: blur(5px);
+  animation: twOverlayIn 0.2s ease;
+  backdrop-filter: blur(4px);
 }
 
 .tab-warning-modal {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 450px;
-  width: 90%;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  max-width: 420px;
+  width: 92%;
   text-align: center;
-  animation: shakeIn 0.5s ease;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border-top: 5px solid #ff4444;
+  animation: twModalIn 0.3s ease;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--color-gray-200);
+  border-top: 3px solid var(--color-danger);
 }
 
 .warning-icon-container {
-  margin-bottom: 15px;
-}
-
-.warning-icon {
-  font-size: 4rem;
-  animation: pulse 1s ease infinite;
-}
-
-.tab-warning-modal h2 {
-  color: #d32f2f;
-  font-size: 1.6rem;
   margin-bottom: 12px;
 }
 
+.warning-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: var(--color-danger-light);
+}
+
+.warning-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-danger);
+}
+
+.tab-warning-modal h2 {
+  color: var(--color-danger);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .warning-message {
-  color: #555;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  color: var(--color-gray-600);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 .warning-progress {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin: 20px 0;
+  gap: 10px;
+  margin: 16px 0;
 }
 
 .warning-dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #e0e0e0;
-  transition: all 0.3s ease;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  background: var(--color-gray-200);
+  transition: all var(--transition);
 }
 
 .warning-dot.used {
-  background: #ff4444;
-  box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+  background: var(--color-danger);
 }
 
 .warning-remaining {
-  color: #666;
-  font-size: 0.95rem;
-  margin-bottom: 25px;
+  color: var(--color-gray-500);
+  font-size: 0.88rem;
+  margin-bottom: 22px;
   line-height: 1.5;
 }
 
 .warning-remaining.critical {
-  color: #d32f2f;
+  color: var(--color-danger);
   font-weight: 600;
 }
 
 .warning-dismiss-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-white);
   border: none;
-  padding: 14px 35px;
-  font-size: 1.05rem;
+  padding: 12px 28px;
+  font-size: 0.9rem;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition);
   width: 100%;
 }
 
 .warning-dismiss-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  background: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
 }
 
-@keyframes fadeIn {
+@keyframes twOverlayIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
-@keyframes shakeIn {
-  0% { transform: scale(0.8) translateX(0); opacity: 0; }
-  20% { transform: scale(1.05) translateX(-10px); }
-  40% { transform: scale(1) translateX(10px); }
-  60% { transform: scale(1) translateX(-5px); }
-  80% { transform: scale(1) translateX(5px); }
-  100% { transform: scale(1) translateX(0); opacity: 1; }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+@keyframes twModalIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
 }

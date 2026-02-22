@@ -304,7 +304,7 @@ function App() {
           <div className="header-right">
             {tabWarnings > 0 && (
               <div className="warning-badge">
-                ⚠️ {tabWarnings}/{MAX_WARNINGS} warnings
+                {tabWarnings}/{MAX_WARNINGS} warnings
               </div>
             )}
             <button

@@ -1,145 +1,154 @@
+/* ── Navigation Bar ── */
 .navigation-container {
-  background: white;
-  border-radius: 12px;
-  padding: 20px 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 16px 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
+/* ── Progress ── */
 .progress-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .progress-bar {
   width: 100%;
-  height: 8px;
-  background: #e0e0e0;
-  border-radius: 10px;
+  height: 6px;
+  background: var(--color-gray-200);
+  border-radius: var(--radius-full);
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
   transition: width 0.3s ease;
 }
 
 .progress-text {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
   font-weight: 500;
 }
 
+/* ── Timer ── */
 .timer {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: #f5f5f5;
-  border-radius: 20px;
-  font-weight: 600;
-  color: #333;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-gray-700);
+  font-size: 0.9rem;
+  transition: all var(--transition);
 }
 
 .timer svg {
-  color: #2196F3;
+  color: var(--color-primary);
 }
 
 .timer-warning {
-  background: #fff3e0;
-  color: #e65100;
-  animation: timerPulse 1s ease infinite;
+  background: var(--color-warning-light);
+  border-color: #fcd34d;
+  color: var(--color-warning);
 }
 
 .timer-warning svg {
-  color: #e65100;
+  color: var(--color-warning);
 }
 
 .timer-critical {
-  background: #ffebee;
-  color: #c62828;
-  animation: timerPulse 0.5s ease infinite;
-  font-size: 1.1rem;
+  background: var(--color-danger-light);
+  border-color: #fca5a5;
+  color: var(--color-danger);
+  animation: timerPulse 1s ease infinite;
 }
 
 .timer-critical svg {
-  color: #c62828;
+  color: var(--color-danger);
 }
 
 @keyframes timerPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.7; }
 }
 
+/* ── Nav Buttons ── */
 .nav-buttons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .nav-btn {
-  padding: 12px 25px;
+  padding: 10px 22px;
   border: none;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition);
 }
 
 .prev-btn {
-  background: #f5f5f5;
-  color: #333;
+  background: var(--color-gray-100);
+  color: var(--color-gray-600);
+  border: 1px solid var(--color-gray-300);
 }
 
 .prev-btn:hover:not(:disabled) {
-  background: #e0e0e0;
+  background: var(--color-gray-200);
+  color: var(--color-gray-800);
 }
 
 .next-btn {
-  background: #2196F3;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .next-btn:hover:not(:disabled) {
-  background: #1976D2;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  background: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-  color: white;
+  background: var(--color-success);
+  color: var(--color-white);
 }
 
 .submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  background: #15803d;
+  box-shadow: var(--shadow-md);
 }
 
 .nav-btn:disabled {
-  opacity: 0.5;
+  opacity: 0.45;
   cursor: not-allowed;
 }
 
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .navigation-container {
     flex-direction: column;
     align-items: stretch;
+    padding: 14px 18px;
   }
-  
   .nav-buttons {
     width: 100%;
     justify-content: space-between;
   }
-  
   .timer {
     align-self: center;
   }

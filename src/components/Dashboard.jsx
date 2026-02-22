@@ -128,15 +128,15 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
             <div
               className="stat-icon"
               style={{
-                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                background: "var(--color-primary-light)",
               }}
             >
               <svg
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="white"
+                stroke="var(--color-primary)"
                 strokeWidth="2"
               >
                 <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
@@ -153,15 +153,15 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
             <div
               className="stat-icon"
               style={{
-                background: "linear-gradient(135deg, #4CAF50 0%, #45a049 100%)",
+                background: "var(--color-success-light)",
               }}
             >
               <svg
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="white"
+                stroke="var(--color-success)"
                 strokeWidth="2"
               >
                 <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
@@ -177,15 +177,15 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
             <div
               className="stat-icon"
               style={{
-                background: "linear-gradient(135deg, #FF9800 0%, #F57C00 100%)",
+                background: "var(--color-warning-light)",
               }}
             >
               <svg
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="white"
+                stroke="var(--color-warning)"
                 strokeWidth="2"
               >
                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
@@ -202,15 +202,15 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
             <div
               className="stat-icon"
               style={{
-                background: "linear-gradient(135deg, #2196F3 0%, #1976D2 100%)",
+                background: "var(--color-primary-light)",
               }}
             >
               <svg
-                width="32"
-                height="32"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="white"
+                stroke="var(--color-primary)"
                 strokeWidth="2"
               >
                 <circle cx="12" cy="12" r="10" />
@@ -272,7 +272,7 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
                           <p>{formatDate(test.test_date)}</p>
                         </div>
                         <div className="test-time">
-                          ⏱️ {formatTime(test.time_taken)}
+                          {formatTime(test.time_taken)}
                         </div>
                       </div>
                     ))}
@@ -449,27 +449,27 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
 
             <div className="config-info">
               <div className="config-info-item">
-                <span className="config-icon">📝</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                 <span>{numQuestions} Questions</span>
               </div>
               <div className="config-info-item">
-                <span className="config-icon">🔀</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
                 <span>Random Order</span>
               </div>
               <div className="config-info-item">
-                <span className="config-icon">⏱️</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 <span>{testDuration} Minutes</span>
               </div>
               <div className="config-info-item">
-                <span className="config-icon">⚠️</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                 <span>3 Tab-Switch Warnings</span>
               </div>
             </div>
 
             <div className="config-warning">
-              <strong>⚠️ Important:</strong> Switching tabs or opening other
+              <strong>Important:</strong> Switching tabs or opening other
               apps will trigger warnings. After 3 warnings, your test will be
-              auto-submitted!
+              auto-submitted.
             </div>
 
             <div className="config-actions">
@@ -486,7 +486,7 @@ const Dashboard = ({ user, onStartTest, onLogout }) => {
                   onStartTest(testDuration, numQuestions);
                 }}
               >
-                Start Test →
+                Start Test
               </button>
             </div>
           </div>
